@@ -1,0 +1,9 @@
+<h2>Appartements pour la résidence {{ residenceId }}</h2>
+
+<ul>
+  <li *ngFor="let apartment of apartments">
+    Appartement {{ apartment.apartNum }} - {{ apartment.category }} - {{ apartment.surface }} m²
+  </li>
+</ul>
+<button routerLink="/addapartment">Créer un nouvel appartement</button>
+
